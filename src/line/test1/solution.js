@@ -1,4 +1,4 @@
 // O(1)
-function solution(x y) {
+function solution(x, y) {
   return x*y;
 }

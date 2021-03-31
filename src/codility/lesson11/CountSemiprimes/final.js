@@ -1,3 +1,7 @@
+/**
+ * 55%
+ * Complexity: O(N * log(log(N)) + M * N) or O(M * N**3) or O(M * N ** (3/2))
+ */
 function solution(N, P, Q) {
   function getDivisors(num) {
     const divisors = [];

@@ -21,15 +21,17 @@ N : 17, number : 17, current : 153
 */
 
 function solution(N) {
-    let largestButSmallerThanN = 0;
-    let prev = 0;
-    for ( let i=1; i<=N; i++ ) {
-        let current = prev = i + prev;
-        if ( current >= N ) {
-            largestButSmallerThanN = i - 1;
-            break;
-        }
+  let largestButSmallerThanN = 0;
+  let prev = 0;
+  for (let i = 1; i <= N; i++) {
+    let current = (prev = i + prev);
+    console.log(current);
+    if (current >= N) {
+      largestButSmallerThanN = i - 1;
+      break;
     }
-    return largestButSmallerThanN;
+  }
+  return largestButSmallerThanN;
 }
-console.log( solution( 17 ) );
+// console.log(solution(0));
+console.log(solution(17));
